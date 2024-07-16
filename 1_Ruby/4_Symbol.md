@@ -1,5 +1,19 @@
 # Symbol
 
+Biểu tượng là những chuỗi có trọng lượng nhẹ. Trước ký hiệu là dấu hai chấm (:). Chúng được sử dụng thay cho chuỗi vì chúng có thể chiếm ít bộ nhớ hơn. Biểu tượng có hiệu suất tốt hơn.
+```ruby
+
+# Ruby program to illustrate the
+# Symbols Data Type
+ 
+#!/usr/bin/ruby
+domains = {:sk => "GeeksforGeeks", :no => "GFG", :hu => "Geeks"}
+ 
+puts domains[:sk]
+puts domains[:no]
+puts domains[:hu]
+```
+
 - Symbol objects represent names and some strings inside the Ruby interpreter.
 
 - They are generated using the `:name` and `:"string"` literals syntax, and by the `to_sym` methods.
@@ -85,7 +99,4 @@ class Cat
 end
 kitty = Cat.new
 kitty.name = "Nancy"
-```
-
-```ruby
 ```

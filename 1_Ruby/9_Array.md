@@ -5,6 +5,19 @@
 - Array Index starts at 0.
 - A negative index is assumed to be relative to the end of the array.
 
+Một mảng lưu trữ dữ liệu hoặc danh sách dữ liệu. Nó có thể chứa tất cả các loại dữ liệu. Dữ liệu trong một mảng được phân tách bằng dấu phẩy ở giữa chúng và được đặt trong dấu ngoặc vuông. Vị trí của các phần tử trong mảng bắt đầu bằng 0. Dấu phẩy ở cuối bị bỏ qua.
+
+```ruby
+# Ruby program to illustrate the
+# Arrays Data Type
+ 
+#!/usr/bin/ruby
+ary = [ "fred", 10, 3.14, "This is a string", "last element", ]
+ary.each do |i|
+ puts i
+end
+```
+
 ## Creating array
 
 Using the literal constructor `[]`
@@ -136,16 +149,4 @@ arr.map {|a| 2 * a} # => [2, 4, 6, 8, 10]
 arr # => [1, 2, 3, 4, 5]
 arr.map! {|a| a ** 2} # => [1, 4, 9, 16, 25]
 arr
-```
-
-```ruby
-```
-
-```ruby
-```
-
-```ruby
-```
-
-```ruby
 ```

@@ -1,6 +1,19 @@
 # String
 
 ## Introduction
+
+Chuỗi là một nhóm các chữ cái đại diện cho một câu hoặc một từ. Chuỗi được xác định bằng cách đặt văn bản trong dấu ngoặc đơn (' ') hoặc dấu ngoặc kép (“ ”). Bạn có thể sử dụng cả dấu ngoặc kép và dấu ngoặc đơn để tạo chuỗi. Chuỗi là đối tượng của lớp String. Chuỗi trích dẫn kép cho phép ký hiệu thay thế và dấu gạch chéo ngược nhưng chuỗi trích dẫn đơn không cho phép thay thế và chỉ cho phép ký hiệu dấu gạch chéo ngược cho \\ và \\\'.
+
+```ruby
+# Ruby program to illustrate the
+# Strings Data Type
+ 
+#!/usr/bin/ruby -w
+puts "String Data Type";
+puts 'escape using "\\"';
+puts 'That\'s right';
+```
+
 - String are one of the most important data types in computer languages.
 
 - A string is a sequence of characters.

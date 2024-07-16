@@ -6,6 +6,19 @@
 inserted.
 - Hashes have a default value that is returned when accessing keys that do not exist in the hash. That value is `nil` by default.
 
+Một hàm băm gán giá trị của nó cho khóa của nó. Giá trị của khóa được gán bởi dấu =>. Một cặp khóa được phân tách bằng dấu phẩy giữa chúng và tất cả các cặp được đặt trong dấu ngoặc nhọn. Hàm băm trong Ruby giống như một đối tượng bằng chữ trong JavaScript hoặc một mảng kết hợp trong PHP. Chúng được tạo ra tương tự như mảng. Dấu phẩy ở cuối bị bỏ qua.
+
+```ruby
+# Ruby program to illustrate the
+# Hashes Data Type
+ 
+#!/usr/bin/ruby
+hsh = colors = { "red" => 0xf00, "green" => 0x0f0, "blue" => 0x00f }
+hsh.each do |key, value|
+ print key, " is ", value, "\n"
+end
+```
+
 ## Creating hash
 
 Using new class method
