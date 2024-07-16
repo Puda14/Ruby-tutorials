@@ -1,0 +1,91 @@
+# Symbol
+
+- Symbol objects represent names and some strings inside the Ruby interpreter.
+
+- They are generated using the `:name` and `:"string"` literals syntax, and by the `to_sym` methods.
+
+
+```ruby
+sym1 = :hello
+sym2 = :"hello"
+sym3 = "hello".to_sym
+p sym1 #:hello
+p sym2 #:hello
+p sym3 #:hello
+```
+
+## Differences between Symbol and String
+
+String is **mutable**, but Symbol isn’t.
+
+```ruby
+str = "hello"
+sym = :hello
+p "1.We can also use brackets with index number to change the letter"
+str[0] = "k"
+p "str = #{str}"
+sym[0] = "k"
+```
+
+Symbol has better performance.
+
+```ruby
+5.times do
+puts "hello".object_id
+end
+#=> difference object_id
+```
+
+```ruby
+5.times do
+puts :hello.object_id
+end
+#=> same object_id
+```
+
+Comparison to prove that symbols is faster than strings.
+
+```ruby
+require 'benchmark'
+str = Benchmark.measure do
+5000000.times do
+"hello" == "hello"
+end
+end.total
+sym = Benchmark.measure do
+5000000.times do
+:hello == :hello
+end
+end.total
+puts "Benchmark"
+puts "String: #{str}"
+puts "Symbol: #{sym}"
+```
+
+```ruby
+# => Benchmark
+# => String: 0.52000000000000 (approximate, mildly differ for each runtime)
+# => Symbol: 0.22999999999999 (approximate, mildly differ for each runtime)
+```
+
+## When should we use Symbol?
+
+Symbol is used as the key of Hash
+
+```ruby
+profile = {name: "eddie", age: 18}
+=> {:name=>"eddie", :age=>18}
+```
+
+Using String or Symbol as parameters
+
+```ruby
+class Cat
+ attr_accessor :name
+end
+kitty = Cat.new
+kitty.name = "Nancy"
+```
+
+```ruby
+```

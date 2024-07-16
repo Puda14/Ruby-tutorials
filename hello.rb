@@ -1,0 +1,1 @@
+puts "You are eligible to vote."
