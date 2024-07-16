@@ -11,10 +11,10 @@ What is file?
 Common `modes` for File Handling
 - `r` : Read-only mode for a file.
 - `r+` : Read-Write mode for a file.
-- `w` : Write-only mode for a file.
-- `w+` : Read-Write mode for a file.
+- `w` : Write-only mode for a file (if the file exists, overwrites everything in the file).
+- `w+` : Read-Write mode for a file (if the file exists, overwrites everything in the file).
 - `a` : Write-only mode, if file exists it will append the data otherwise a new file will be created.
-- `a+` : Read and Write mode, if file exists it will append the data otherwise a new file will be created.
+- `a+` : Read and Write mode, if file exists it will append the data otherwise a new file will be created (if file exists, starts at end of file. Otherwise creates a new file).
 
 ## Creating file
 
