@@ -1,4 +1,16 @@
-# Methods
+# Object Oriented Programming
+
+## Objects
+
+Throughout the Ruby community you'll often hear the phrase, "In Ruby, everything is an object!". We've avoided this reality so far because objects are a more advanced topic and it's necessary to get a handle on basic Ruby syntax before you start thinking about objects.
+
+```ruby
+irb :001 > "hello".class
+=> String
+irb :002 > "world".class
+=> String
+```
+
 
 ## Methods
 
@@ -31,9 +43,20 @@ def method_name(*variable_name)
 end
 ```
 
+Tham số từ khoá
+
+```ruby
+def readFile(file:, record:)
+  puts file
+  puts record
+end
+
+readFile(file: "hello.txt", record: "abc") #hello.txt abc
+readFile(record: "hello.txt", file: "abc") #hello.txt abc
+```
+
 - Methods return the value of the last **statement executed**.
-- An explicit return statement can also be used to return from function with a
-value, prior to the end of the function declaration.
+- An explicit return statement can also be used to return from function with a value, prior to the end of the function declaration.
 
 ## Class method and instance method
 
@@ -60,6 +83,34 @@ puts Invoice.new.convert_to_pdf
 Printed out invoice
 2.Execute instance method
 Converted to PD
+```
+
+3 cách tạo **Class Method**
+
+```ruby
+class Invoice
+ # class method
+ def self.print_out
+  "Printed out invoice"
+ end
+
+ # class method
+ def Invoice.print_ok
+  "OK"
+ end
+
+ # class method
+ class << self
+  def class_method1
+   "hello"
+  end
+
+  def class_method2
+   "hi"
+  end
+ end
+
+end
 ```
 
 ## Block, Proc, Lambda
