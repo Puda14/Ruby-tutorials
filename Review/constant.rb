@@ -1,3 +1,3 @@
 MSG = "hello"
-MSG.upcase!
+MSG = MSG.upcase!
 p MSG
