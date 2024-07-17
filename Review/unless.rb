@@ -1,9 +1,11 @@
 #Example 1
-x = 1
-unless x >= 2
-puts "x is less than 2"
+x = 2
+unless x > 2
+ puts "x is less than 2"
+elsif x==2
+ puts "x"
 else
-puts "x is greater than 2"
+ puts "c"
 end
 #Example 2
 $var = 1
