@@ -15,6 +15,9 @@ Cần có hai điều để người khác có thể nhìn thấy những thay �
 - You commit
 - They update 
 
+
+![Hình ảnh mẫu](./img/cvcss.png)
+
 **Lợi ích** của CVCS (Hệ thống kiểm soát phiên bản tập trung) tạo ra sự hợp tác giữa các nhà phát triển cùng với việc cung cấp cái nhìn sâu sắc ở một mức độ nhất định về những gì mọi người khác đang làm trong dự án. Nó cho phép quản trị viên kiểm soát chi tiết ai có thể làm gì.
 
 Nó cũng có một số **nhược điểm** dẫn đến sự phát triển của DVS. Rõ ràng nhất là điểm lỗi duy nhất mà kho lưu trữ tập trung thể hiện nếu nó ngừng hoạt động trong khoảng thời gian đó và không thể cộng tác và lưu các thay đổi được phiên bản. Điều gì sẽ xảy ra nếu đĩa cứng của cơ sở dữ liệu trung tâm bị hỏng và các bản sao lưu thích hợp không được lưu giữ? Bạn hoàn toàn mất tất cả mọi thứ.
@@ -26,3 +29,5 @@ Nó cũng có một số **nhược điểm** dẫn đến sự phát triển c�
 - You push
 - They pull
 - They update
+
+![Hình ảnh mẫu](./img/distvcs.png)
