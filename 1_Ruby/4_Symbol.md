@@ -100,3 +100,21 @@ end
 kitty = Cat.new
 kitty.name = "Nancy"
 ```
+
+Ruby sử dụng một kỹ thuật gọi là "interning" để quản lý Symbols. Khi một Symbol được tạo ra, Ruby lưu trữ nó trong một bảng nội bộ. Nếu Symbol đó đã tồn tại, Ruby sẽ tái sử dụng tham chiếu của Symbol đó thay vì tạo ra một đối tượng mới. Điều này đảm bảo rằng mỗi Symbol chỉ tồn tại một lần trong bộ nhớ.
+
+```ruby
+str1 = "hello"
+str2 = "hello"
+
+puts str1.object_id == str2.object_id  # False, mỗi String có object_id riêng
+puts str1 == str2                      # True, giá trị giống nhau nhưng object khác nhau
+```
+
+```ruby
+sym1 = :hello
+sym2 = :hello
+
+puts sym1.object_id == sym2.object_id  # True, cả hai Symbol đều dùng cùng một object_id
+puts sym1 == sym2                      # True, giá trị và object đều giống nhau
+```
