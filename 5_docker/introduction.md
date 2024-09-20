@@ -70,3 +70,7 @@ Docker là công cụ mạnh mẽ trong việc triển khai, phát triển và d
 ## Download
 
 Làm theo [link](https://docs.docker.com/engine/install/ubuntu/)
+
+## Getting Started
+
+Làm theo [link](https://docs.docker.com/get-started/introduction/build-and-push-first-image/)
