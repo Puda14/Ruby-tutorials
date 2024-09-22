@@ -7,6 +7,11 @@
     - [Registry](./docker-concepts/The_basics/Registry.md)
     - [Docker_compose](./docker-concepts/The_basics/Docker_compose.md)
 - [Building images](#building-images)
+    - [Understanding the image layers](./docker-concepts/Building_images/Understanding_the_image_layers.md)
+    - [Writing a Dockerfile](./docker-concepts/Building_images/Writing_a_Dockerfile.md)
+    - [Build, tag, and publish an image](./docker-concepts/Building_images/Build,%20tag,%20and%20publish%20an%20image.md)
+    - [Using the build cache](./docker-concepts/Building_images/Using%20the%20build%20cache.md)
+    - [Multi-stage builds](./docker-concepts/Building_images/Multi-stage%20builds.md)
 - [Building containers](#building-containers)
 
 ## Docker workshop
