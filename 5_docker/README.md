@@ -19,8 +19,8 @@
     - [Sharing local files with containers](./docker-concepts/Building_containers/Sharing%20local%20files%20with%20containers.md)
     - [Multi-container applications](./docker-concepts/Building_containers/Multi-container%20applications.md)
 ## Docker workshop
-- Section 1
-- Section 2
+- [Docker workshop](https://docs.docker.com/get-started/workshop/)
+- [Docker Cheat Sheet](./docker_cheat_sheet.md)
 
 # Introduction
 
