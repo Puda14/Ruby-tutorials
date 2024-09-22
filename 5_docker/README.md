@@ -13,7 +13,11 @@
     - [Using the build cache](./docker-concepts/Building_images/Using%20the%20build%20cache.md)
     - [Multi-stage builds](./docker-concepts/Building_images/Multi-stage%20builds.md)
 - [Building containers](#building-containers)
-
+    - [Publishing and exposing ports](./docker-concepts/Building_containers/Publishing%20and%20exposing%20ports.md)
+    - [Overriding container defaults](./docker-concepts/Building_containers/Overriding%20container%20defaults.md)
+    - [Persisting container data](./docker-concepts/Building_containers/Publishing%20and%20exposing%20ports.md)
+    - [Sharing local files with containers](./docker-concepts/Building_containers/Sharing%20local%20files%20with%20containers.md)
+    - [Multi-container applications](./docker-concepts/Building_containers/Multi-container%20applications.md)
 ## Docker workshop
 - Section 1
 - Section 2
